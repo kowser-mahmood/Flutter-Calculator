@@ -1,0 +1,73 @@
+import 'package:calculator/buttons.dart';
+import 'package:flutter/material.dart';
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Color.fromARGB(255, 70, 20, 164),
+            Color.fromARGB(255, 78, 88, 193),
+          ],
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+        ),
+      ),
+      child: Center(
+        child: Container(
+          height: 600,
+          width: 400,
+          decoration: BoxDecoration(
+            color: Color.fromARGB(255, 215, 222, 226),
+            borderRadius: BorderRadius.circular(15),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Buttons(ontap: () {}, icon: ("+")),
+                  Buttons(ontap: () {}, icon: ("+")),
+                  Buttons(ontap: () {}, icon: ("+")),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Buttons(ontap: () {}, icon: ("+")),
+                  Buttons(ontap: () {}, icon: ("+")),
+                  Buttons(ontap: () {}, icon: ("+")),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Buttons(ontap: () {}, icon: ("+")),
+                  Buttons(ontap: () {}, icon: ("+")),
+                  Buttons(ontap: () {}, icon: ("+")),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Buttons(ontap: () {}, icon: ("+")),
+                  Buttons(ontap: () {}, icon: ("+")),
+                  Buttons(ontap: () {}, icon: ("+")),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

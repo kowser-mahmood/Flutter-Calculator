@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/flutter/calculator/build/cmake_install.cmake",
+		"E:/flutter/calculator/build/flutter/cmake_install.cmake",
+		"E:/flutter/calculator/build/runner/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
